@@ -32,5 +32,4 @@ if __name__ == "__main__":
         if line.find("JOIN") != -1:
             auto_op(s, line)
         if(line.find("PING", 0, 4) != -1): # If server pings then pong
-            s.send('PONG ' + HOST + '\r\n')
-            #print "I PONG TO GET SOME PING"
+            s.send('PONG ' + HOST + '\r\n') # I PONG TO GET SOME PING

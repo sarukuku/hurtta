@@ -15,7 +15,7 @@ def parsemsg(s, msg):
     msgpart = complete[1] 
     sender = info[0].split('!')
     chan = info[2]
-    save_url(s, chan, msg)
+    #save_url(s, chan, msg) # save all URLs seen on channel, disabled for now
     if msgpart[0] == COMMAND and sender[1] in OWNER:
         cmd = msgpart[1:].split(' ')
         if cmd[0].rstrip() == 'quit':
@@ -42,7 +42,6 @@ def auto_op(s, msg):
     info = info[1].split(' ')
     chan = info[2].split(':')[1].rstrip()
     if info[0] in OWNER:
-        #print 'MODE ' + chan + ' +o ' + nick + '\r\n'
         s.send('MODE ' + chan + ' +o ' + nick + '\r\n')
 
 def save_url(s, chan, msg):
