@@ -1,4 +1,8 @@
 hurtta
 ======
 
-Hurtta is a small IRC bot
+Hurtta is a small IRC bot built by @sarukuku and @roopemerikukka
+
+Hurtta is built with python and only python.
+
+At the moment all of it's code is a result of a few hours we had for it on our first BeerCamp. Consider that when go through the code.
